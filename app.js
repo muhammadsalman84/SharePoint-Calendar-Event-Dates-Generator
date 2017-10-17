@@ -4,8 +4,7 @@ imeetingsite.app = imeetingsite.app || {};
 (function (app, $) {
 
     app.init = function () {
-        imeetingsite.mainmodule.loadConfguration();
-        imeetingsite.documentui.init();
+        imeetingsite.mainmodule.loadConfguration();        
     }
 
     // When DOM is ready then initialize the objects
@@ -22,7 +21,3 @@ imeetingsite.app = imeetingsite.app || {};
         app.init();
     });
 })(imeetingsite.app, $);
-
-/*$(window).on('scroll',function(){
-    alert('Hi');
-});*/

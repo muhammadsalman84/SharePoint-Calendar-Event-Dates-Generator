@@ -28,8 +28,6 @@ imeetingsite.mainmodule = imeetingsite.mainmodule || {};
             });
     }
 
-
-
     // Bind the Events to the buttons and other controls
     mainmodule.bindEvents = function () {
 
@@ -51,7 +49,8 @@ imeetingsite.mainmodule = imeetingsite.mainmodule || {};
     mainmodule.onChangeDateSelected = function (element) {
         var selectedDate = element.text();
         $('.dateSelected').removeClass('dateSelected'); // find and remove the dateSelected class
-        $(element).addClass('dateSelected'); // Add the class to the li which is the parent of anchor       
+        $(element).addClass('dateSelected'); // Add the class to the li which is the parent of anchor  
+         mainmodule.setSelectedDateInHeader(selectedDate);     
     }
 
     // Render all the dates on the left side of the page
@@ -65,20 +64,18 @@ imeetingsite.mainmodule = imeetingsite.mainmodule || {};
 
         $("#menu").append(datesHtml);
 
-        $('.anchorControls').click(function () {});
+        $('.anchorControls').click(function () {
+            mainmodule.onChangeDateSelected($(this).parent());            
+        });
+
+        // Call function and pass First Date as parameter
+        mainmodule.onChangeDateSelected($("#menu li:first-child"));
     }
 
     // Load and set the Header controls on the page.
     mainmodule.loadHeaderValues = function () {
-
-        $('#txtBetreff').text(headerValues.Betreff);
-        $('#txtWebTitle').text("Share");
-        //$('#txtDatum').text(headerValues.StartDate);
-        $('#txtOrt').text(headerValues.Ort);
-        $('#aKalendar').attr("href", headerValues.Url);
-        // If the value is 1 then show the Protokoll NewsLetter link
-
-
+        $('#txtBetreff').text("I am using example date range. Please use real data from SharePoint Calendar list for development.");
+        $('#txtWebTitle').text("SharePoint Event dates generator example");       
     }
 
     mainmodule.loadConfguration = function () {

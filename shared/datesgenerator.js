@@ -608,4 +608,28 @@
           return datesCollection;
       }
 
+       datepanelbl.getBasicDatesRange = function (startDate, EndDate) {
+        var startDT = new Date(startDate);
+        var endDT = new Date(EndDate);
+
+        var datesCollection = [];
+        var incrementDT = new Date(startDate);
+        while (incrementDT <= endDT) {
+            var dd = incrementDT.getDate();
+            var mm = incrementDT.getMonth() + 1;
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+            datesCollection.push(dd + "." + mm + "." + incrementDT.getFullYear());
+            incrementDT.setDate(incrementDT.getDate() + 1);
+        }
+
+        return datesCollection;
+
+    }
+
   })(imeetingsite.datepanelbl, $)

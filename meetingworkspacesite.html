@@ -5,12 +5,14 @@
     <title>SharePoint Calendar Dates Generator</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
     
-    <link rel="stylesheet" href="http://sp15e-entwicklung.splab.local/sites/kalendar-losung/SiteAssets/meetingworkspace-js-package/css/jquery-ui.css">    
-    <link rel="stylesheet" href="http://sp15e-entwicklung.splab.local/sites/kalendar-losung/SiteAssets/meetingworkspace-js-package/css/style.css">    
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
     
-    <script type="text/javascript" src="libs/jquery-1.12.4.js"></script>   
-    <script type="text/javascript" src="pagination.js"></script>
-    <script type="text/javascript" src="pagination.js"></script>
+    <script type="text/javascript" src="libs/jquery-1.12.4.js"></script>  
+    <script type="text/javascript" src="libs/xml2json.js"></script>   
+    <script type="text/javascript" src="shared/datesgenerator.js"></script>
+    <script type="text/javascript" src="shared/pagination.js"></script>
+    <script type="text/javascript" src="bl/sp-bl.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="app.js"></script>
 </head>
@@ -20,22 +22,25 @@
 
         <div class="header-panel">
             <h1><strong><span id="txtWebTitle"></span></strong></h1><br>
-            <strong>Betreff: </strong><span id="txtBetreff"></span><br>
-            <strong>Datum: </strong><span id="txtDatum"></span></strong>
-            <!--Zeit:</strong><span id="txtZeit"></span>--><br>
-            <strong>Ort: </strong><span id="txtOrt"></span><br><br>            
+            <strong>Description: </strong><span id="txtBetreff"></span><br>                    
             <hr>
         </div>
 
         <div class="dates-panel">
-            <strong><h4 class="">Wählen Sie ein Datum aus der folgenden Liste aus:</h4></strong>
+            <strong><h4 class="">Please select the date by clicking it:</h4></strong>
             <hr>
             <ul id="menu">
             </ul>
             <div class="pagination">
                 <a href="#" id="btnPrevious">Previous</a><a class="next" href="#" id="btnNext">Weiter</a>
             </div>
-        </div>       
+        </div>   
+        <div class="left-region">
+            <h2><span id="txtDatum"></span></h2>
+        </div>  
+        <div class="right-region">
+            <img src="images/Recurrence Event Example.png"></img>
+        </div>  
     </div>   
 </body>
 
