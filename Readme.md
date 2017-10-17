@@ -4,7 +4,7 @@ The following is an example for recurrence rule.
 
 
 
-"<recurrence><rule><firstDayOfWeek>su</firstDayOfWeek><repeat><monthly monthFrequency="1" day="16" /></repeat><repeatForever>FALSE</repeatForever></rule></recurrence>"
+<recurrence><rule><firstDayOfWeek>su</firstDayOfWeek><repeat><monthly monthFrequency="1" day="16" /></repeat><repeatForever>FALSE</repeatForever></rule></recurrence>
 
 
 
