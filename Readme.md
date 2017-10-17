@@ -3,9 +3,9 @@ SharePoint Calendar saves a event with recurrence rules as xml format.
 The following is an example for recurrence rule.
 
 
-
+~~~ xml
 <recurrence><rule><firstDayOfWeek>su</firstDayOfWeek><repeat><monthly monthFrequency="1" day="16" /></repeat><repeatForever>FALSE</repeatForever></rule></recurrence>
-
+~~~
 
 
 If you are looking for a library that generates the same list of dates by looking into the recurrence xml then do check the datesgenerator.js.
