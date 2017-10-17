@@ -1,0 +1,104 @@
+.ms-dialogHidden, ms-core-sideNavBox-removeLeftMargin {
+    display: none !important;
+}
+
+#contentBox {
+    margin-left: 20px !important;
+}
+
+.container {
+    padding: 0px 5px 5px 5px;
+    height: 100%;
+    width: 100%;        
+}
+
+#menu {
+    list-style-type: none;
+    padding: 0px;
+}
+
+#menu li {
+    padding: 0px;
+    margin: 5px 5px 5px 0px;
+}
+
+.next {
+    margin-left: 10px;
+}
+
+.dates-panel {
+    float: left;
+    margin: 0px 5px 5px 0px;
+    width: 10%;
+    height: 100%;
+    background-color: #F1F1F1;
+    border: 1px solid #F1F1F1;
+    padding: 10px 10px 10px 30px;
+}
+
+.dateSelected {
+    font-weight: bold;
+}
+
+.left-region {
+    float: left;
+    width: 45%;
+    margin-right: 10px;
+}
+
+.right-region {
+    float: left;
+    width: 40%;
+    margin-left: 5px;
+}
+
+.region-title {
+    background-color: #0072BC;
+    color: White;
+    font-size: large;
+    margin: 5px 0px 25px 0px;
+    padding: 10px 0px 10px 5px;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    float: right;
+    margin-right: 50px;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+td.details-control {
+    background: url('../images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.details td.details-control {
+    background: url('../images/details_close.png') no-repeat center center;
+}
