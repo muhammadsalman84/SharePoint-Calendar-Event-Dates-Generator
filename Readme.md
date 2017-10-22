@@ -1,5 +1,5 @@
 # SharePoint-Calendar-Event-Dates-Generator
-SharePoint Calendar saves an event with recurrence rules as xml in RecurrenceData column. 
+SharePoint Calendar saves an event with recurrence rules as xml format in RecurrenceData column. 
 The following is an example for recurrence rule.
 
 
@@ -8,5 +8,5 @@ The following is an example for recurrence rule.
 ~~~
 
 
-If you are looking for a library that generates the same list of dates by looking into the RecurrenceData xml then do check the datesgenerator.js library. This library will generate you list of dates based on recurrence rule. 
+If someone is looking for a library that generates the same list of dates by looking into the RecurrenceData column then do check the datesgenerator.js library. This library will generate you list of dates based on recurrence rule. I have first implemented this library and used it as an example in this project.. cheers. :)
 
