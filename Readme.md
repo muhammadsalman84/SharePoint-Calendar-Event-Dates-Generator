@@ -8,5 +8,5 @@ The following is an example for recurrence rule.
 ~~~
 
 
-A javascript library that generates the list of dates by using the RecurrenceData column of a SharePoint Calendar List. This library will generate a list of dates based on recurrence rule (xml). I have first implemented this library and used it here to show how one can use this javascript library.. cheers. :)
+A javascript library that generates the list of dates by using the RecurrenceData column of a SharePoint Calendar List. This library will generate a list of dates based on recurrence rule (xml)... cheers. :)
 
